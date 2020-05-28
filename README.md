@@ -12,6 +12,6 @@ yarn install
 yarn storybook
 
 # build for production with minification
-yarn build
+yarn build-storybook
 
 ```
