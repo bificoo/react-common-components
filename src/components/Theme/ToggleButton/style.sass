@@ -1,0 +1,38 @@
+.toggle-button
+    margin-bottom: 20px
+
+    a
+        display: block
+        text-decoration: underline
+        color: #5e5e5e
+        width: 55px
+        height: 31px
+        background: white
+        border-radius: 20px
+        padding: 3px
+        box-sizing: border-box
+        transition: flex-direction 0.4s
+        position: relative
+        transition: background 0.3s
+        border: 1px solid #bdbdbd
+
+        &:before
+            content: ""
+            display: block
+            position: absolute
+            left: 0
+            top: 0
+            margin: 4px
+            width: 20px
+            height: 20px
+            border-radius: 100%
+            border: 1px solid #bdbdbd
+            background: white
+            transition: left 0.3s
+
+        &.open
+            background: #1b1c20
+            border-color: #9a97a2
+
+            &:before
+                left: calc(100% - 28px)

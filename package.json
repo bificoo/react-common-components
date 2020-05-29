@@ -12,20 +12,52 @@
     "type": "git",
     "url": "git+https://github.com/bificoo/react-common-components.git"
   },
-  "keywords": ["react", "webpack", "storybook"],
+  "keywords": [
+    "react",
+    "webpack",
+    "storybook"
+  ],
   "author": "bificoo <bificoo@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bificoo/react-common-components/issues"
   },
   "homepage": "https://github.com/bificoo/react-common-components#readme",
-  "dependencies": {},
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-syntax-highlighter": "^12.2.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.10.1",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-env": "^7.10.1",
+    "@babel/preset-react": "^7.10.1",
     "@storybook/addon-actions": "^5.3.19",
     "@storybook/addon-links": "^5.3.19",
     "@storybook/addons": "^5.3.19",
     "@storybook/react": "^5.3.19",
-    "babel-loader": "^8.1.0"
+    "autoprefixer": "^9.8.0",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.3",
+    "demo-source-loader": "^1.0.0",
+    "eslint": "^7.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-filenames": "^1.3.2",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.4",
+    "file-loader": "^6.0.0",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^2.0.5",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "url-loader": "^4.1.0"
   }
 }

@@ -1,0 +1,145 @@
+.ui-button
+    display: flex
+    justify-content: center
+    align-items: center
+    min-width: 5rem
+    height: 2.8rem
+    font-size: 0.9rem
+    border-radius: 0.5rem
+    border: solid 1px transparent
+    padding: 0 2rem
+    line-height: 1
+    cursor: pointer
+    outline: none
+    transition: all .3s
+
+    &[disabled], &[disabled]:hover, &[disabled]:active, &[disabled].active
+        cursor: not-allowed
+
+a.ui-button
+    min-width: auto
+    height: auto
+    padding: 0
+    display: inline
+    text-decoration: underline
+
+    &:hover, &:active, &.active
+        text-decoration: underline
+
+.custom-button
+    background-image: none
+    background-color: white
+    cursor: pointer
+
+    &[disabled], &[disabled]:hover, &[disabled]:active, &[disabled].active
+        cursor: default
+
+.ui-button-day
+    &[disabled], &[disabled]:hover, &[disabled]:active, &[disabled].active
+        opacity: 0.3
+
+    &.primary
+        background-color: #1b1c20
+        border-color: transparent
+        color: white
+
+        &:hover
+            background-color: lighten(#1b1c20, 10%)
+            border-color: lighten(#1b1c20, 10%)
+            color: white
+
+        &:active, &.active, &.active:hover
+            background-color: darken(#1b1c20, 10%)
+            border-color: darken(#1b1c20, 10%)
+            color: white
+
+        &[disabled], &[disabled]:hover, &[disabled]:active, &[disabled].active
+            background-color: #1b1c20
+            border-color: transparent
+            color: white
+
+    &.secondary
+        background-color: transparent
+        border-color: #d9d9d9
+        color: #1b1c20
+
+        &:hover
+            background-color: transparent
+            border-color: lighten(#1b1c20, 40%)
+            color: #1b1c20
+
+        &:active, &.active, &.active:hover
+            background-color: transparent
+            border-color: black
+            color: black
+
+        &[disabled], &[disabled]:hover, &[disabled]:active, &[disabled].active
+            background-color: transparent
+            border-color: lighten(#1b1c20, 30%)
+            color: #1b1c20
+
+    &.link
+        background-color: transparent
+        border-color: transparent
+        color: #1b1c20
+
+        &:hover
+            color: lighten(#1b1c20, 40%)
+
+        &:active, &.active, &.active:hover
+            color: darken(#1b1c20, 20%)
+
+.ui-button-night
+    &[disabled], &[disabled]:hover, &[disabled]:active, &[disabled].active
+        opacity: 0.5
+
+    &.primary
+        background-color: white
+        border-color: transparent
+        color: #1b1c20
+
+        &:hover
+            background-color: darken(white, 4%)
+            border-color: darken(white, 4%)
+            color: #1b1c20
+
+        &:active, &.active, &.active:hover
+            background-color: darken(white, 8%)
+            border-color: darken(white, 8%)
+            color: #1b1c20
+
+        &[disabled], &[disabled]:hover, &[disabled]:active, &[disabled].active
+            background-color: white
+            border-color: transparent
+            color: #1b1c20
+
+    &.secondary
+        background-color: transparent
+        border-color: darken(white, 20%)
+        color: white
+
+        &:hover
+            background-color: transparent
+            border-color: white
+            color: white
+
+        &:active, &.active, &.active:hover
+            background-color: transparent
+            border-color: darken(white, 40%)
+            color: white
+
+        &[disabled], &[disabled]:hover, &[disabled]:active, &[disabled].active
+            background-color: transparent
+            border-color: white
+            color: white
+
+    &.link
+        background-color: transparent
+        border-color: transparent
+        color: white
+
+        &:hover
+            color: darken(white, 20%)
+
+        &:active, &.active, &.active:hover
+            color: darken(white, 40%)

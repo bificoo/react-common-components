@@ -1,9 +1,22 @@
-module.exports = {
-  stories: ['../stories/**/*.stories.js'],
-  addons: ['@storybook/addon-actions', '@storybook/addon-links'],
-  webpackFinal: async config => {
-    // do mutation to the config
+const developmentConfig = require("./webpack.config.development.js");
 
-    return config;
-  },
+module.exports = {
+    stories: ['../src/**/*.stories.js'],
+    // addons: ['@storybook/addon-actions', '@storybook/addon-links'],
+    webpackFinal: async (config, { configType }) => {
+        if (configType === "DEVELOPMENT") {
+            return {
+                ...config,
+                resolve: {
+                    ...config.resolve,
+                    ...developmentConfig.resolve,
+                },
+                module: {
+                    ...config.module,
+                    rules: developmentConfig.module.rules,
+                },
+            };
+        }
+        return config;
+    },
 };

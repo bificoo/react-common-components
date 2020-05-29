@@ -1,0 +1,159 @@
+{
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "env": {
+        "es6": true,
+        "browser": true,
+        "node": true,
+        "jquery": true,
+        "jest": true
+    },
+    "settings": {
+        "react": {
+            "createClass": "createReactClass",
+            "pragma": "React",
+            "version": "16.13.1"
+        }
+    },
+    "plugins": [
+        "filenames",
+        "react",
+        "react-hooks",
+        "prettier"
+    ],
+    "rules": {
+        "no-compare-neg-zero": "error",
+        "no-cond-assign": "warn",
+        "no-constant-condition": "error",
+        "no-control-regex": "error",
+        "no-dupe-args": "error",
+        "no-dupe-keys": "error",
+        "no-duplicate-case": "error",
+        "no-empty": "error",
+        "no-empty-character-class": "error",
+        "no-ex-assign": "error",
+        "no-extra-boolean-cast": "error",
+        "no-extra-parens": "off",
+        "no-extra-semi": "off",
+        "no-func-assign": "error",
+        "no-inner-declarations": "error",
+        "no-invalid-regexp": "error",
+        "no-irregular-whitespace": "error",
+        "no-obj-calls": "error",
+        "no-regex-spaces": "error",
+        "no-sparse-arrays": "error",
+        "no-unexpected-multiline": "off",
+        "no-unreachable": "error",
+        "no-unsafe-finally": "error",
+        "no-unsafe-negation": "error",
+        "use-isnan": "error",
+        "valid-typeof": "error",
+        "for-direction": "off",
+        "no-await-in-loop": "off",
+        "no-console": "off",
+        "no-debugger": "off",
+        "no-prototype-builtins": "off",
+        "no-template-curly-in-string": "off",
+        "valid-jsdoc": "off",
+        "no-undef": "error",
+        "react/react-in-jsx-scope": "error",
+        "react/jsx-uses-react": "error",
+        "react/jsx-uses-vars": "error",
+        "init-declarations": "error",
+        "no-catch-shadow": "error",
+        "no-label-var": "error",
+        "no-restricted-globals": "error",
+        "no-shadow": "error",
+        "no-shadow-restricted-names": "error",
+        "no-undef-init": "error",
+        "no-undefined": "error",
+        "no-use-before-define": "error",
+        "react/prop-types": "off",
+        "react/no-direct-mutation-state": "off",
+        "react/jsx-no-bind": [
+            "error",
+            {
+                "ignoreRefs": true,
+                "allowArrowFunctions": true
+            }
+        ],
+        "react/jsx-pascal-case": [
+            "error",
+            {
+                "allowAllCaps": true
+            }
+        ],
+        "react/prefer-es6-class": [
+            "error",
+            "always"
+        ],
+        "react/prefer-stateless-function": [
+            "error",
+            {
+                "ignorePureComponents": true
+            }
+        ],
+        "filenames/match-regex": [
+            "error",
+            "^([a-z][a-z0-9.]+)([A-Z][a-z0-9]+)*$",
+            true
+        ],
+        "filenames/match-exported": [
+            "error",
+            "pascal",
+            null,
+            true
+        ],
+        "filenames/no-index": "off",
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "prettier/prettier": [
+            "error",
+            {
+                "printWidth": 130,
+                "tabWidth": 4,
+                "useTabs": false,
+                "semi": true,
+                "singleQuote": false,
+                "quoteProps": "as-needed",
+                "jsxSingleQuote": false,
+                "trailingComma": "es5",
+                "bracketSpacing": true,
+                "jsxBracketSameLine": false,
+                "arrowParens": "avoid",
+                "endOfLine": "auto"
+            }
+        ],
+        "react/no-deprecated": "warn",
+        "react/jsx-no-target-blank": "warn"
+    },
+    "extends": [
+        "eslint:recommended",
+        "prettier",
+        "prettier/babel",
+        "prettier/react",
+        "prettier/standard",
+        "prettier/unicorn"
+    ],
+    "overrides": [
+        {
+            "files": [
+                "conf/**/*.js",
+                "packages/**/*",
+                "*.test.js",
+                "*.test.jsx",
+                "*.demo.js"
+            ],
+            "rules": {
+                "filenames/match-regex": "off",
+                "filenames/match-exported": "off",
+                "filenames/no-index": "off"
+            }
+        }
+    ]
+}

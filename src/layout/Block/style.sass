@@ -1,0 +1,70 @@
+@import ~styles/variables
+
+.ui-block
+    display: flex
+    flex-direction: column
+    margin-bottom: 40px
+
+    h3
+        display: flex
+        align-items: center
+        font-weight: 400
+        margin-top: 0
+        margin-bottom: 0
+        padding-bottom: 3px
+
+        > span
+            font-size: 10px
+            font-family: monospace
+            margin-left: 10px
+            cursor: pointer
+
+            .code-status
+                opacity: 0
+                transition: opacity 0.3s
+
+            &.open
+                .code-status
+                    opacity: 1
+
+            &:hover
+                color: #36a9fb
+
+    h3 + p
+        margin: 0
+
+    > .main, > .code
+        padding: 3em 4em 4em
+
+    > .main
+        background-size: cover
+        background-position: center
+
+    > .code
+        display: none
+
+        &.open
+            display: block
+
+        pre
+            margin: 0 !important
+
+.ui-block-day
+    color: $font-color-day
+    border: 1px solid #dbdbdb
+
+    h3
+        color: #000
+
+    > .main
+        background-color: white
+
+.ui-block-night
+    color: $font-color-night
+    border: 1px solid #dbdbdb
+
+    h3
+        color: #fff
+
+    > .main
+        background-color: #1b1c20
